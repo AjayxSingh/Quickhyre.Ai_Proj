@@ -1,12 +1,9 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
   import { Card, CardContent } from '../../lib/components/ui/card';
   import { Input } from '../../lib/components/ui/input';
-  import { Textarea } from '../../lib/components/ui/textarea';
   import { Button } from '../../lib/components/ui/button';
   import { Avatar, AvatarFallback, AvatarImage } from '../../lib/components/ui/avatar';
   import { ScrollArea } from '../../lib/components/ui/scroll-area';
-  import { Separator } from '../../lib/components/ui/separator';
 
   let selectedUser = 0;
 
