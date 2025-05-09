@@ -6,7 +6,7 @@
   <tr class="border-b">
     <td class="py-3 px-4 flex gap-3 items-center">
       <img src="https://lh3.googleusercontent.com/a/ACg8ocJHvYRcfahZQYFP9jrugl8nNhKarW0j_nzTIXO-ILUBWGXQwQ=s96-c" class="w-8 h-8 rounded-full" alt="{candidate.name}'s profile picture" />
-      <div>
+      <div class="mr-5">
         <div class="font-medium">{candidate.name}</div>
         <div class="text-xs text-muted-foreground">{candidate.email}</div>
       </div>
