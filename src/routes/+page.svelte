@@ -4,6 +4,9 @@
     import HiringPipeline from "$lib/components/dashboard/HiringPipeline.svelte";
     import MetricsGrid from '../lib/components/dashboard/MetricsGrid.svelte';
   import ApplicationTable from '../lib/components/dashboard/ApplicationTable.svelte';
+  import { applications } from '../lib/data/applications';
+  import * as Dialog from '../lib/components/ui/dialog';
+  
 </script>
   
   <div class="p-6 space-y-6 ">
@@ -33,15 +36,13 @@
       <MetricsGrid />
 
       <Card class="w-full flex justify-between flex-col  mb-4">
-        <CardContent class="flex flex-row gap-10 justify-between mb-4">
+        <CardContent class=" gap-10 justify-between mb-4">
           <div>
             <h2 class="text-xl font-semibold">Recent Applications</h2>
             <p class="text-sm text-muted-foreground">Latest candidate applications</p>
           </div>
-          <button class="border rounded px-3 py-1 text-sm">Filter</button>
+          <ApplicationTable {applications} />
         </CardContent>
-
-        <ApplicationTable />
       </Card>
   </div>
 

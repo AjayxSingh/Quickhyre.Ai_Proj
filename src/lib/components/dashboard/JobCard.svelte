@@ -14,7 +14,7 @@
       <div>
         <h3 class="font-semibold text-lg">
           {title}
-          <button class="ml-2 text-white bg-green-500 px-2 py-1 rounded-xl text-sm">{status}</button>
+          <button class="ml-2 text-white {status === 'Active' ? 'bg-green-500' : 'bg-red-500'} px-2 py-1 rounded-xl text-sm">{status}</button>
         </h3>
         <p class="text-sm text-muted-foreground">{details}</p>
         <div class="flex gap-2 mt-2 flex-wrap">
